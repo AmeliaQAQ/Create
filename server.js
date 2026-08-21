@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = process.env.PORT || 4173;
-const ROOT = __dirname;
+const ROOT = path.join(__dirname, 'public');
 const SERVER_API_KEY = process.env.OPENAI_API_KEY || '';
 const SERVER_BASE_URL = (process.env.OPENAI_BASE_URL || 'https://api.openai.com/v1').replace(/\/+$/, '');
 const SERVER_MODEL = process.env.OPENAI_MODEL || 'gpt-4o-mini';
