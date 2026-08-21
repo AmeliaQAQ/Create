@@ -52,6 +52,14 @@ npm start
 3. 添加 `OPENAI_API_KEY` 环境变量。
 4. `api/chat.js` 和 `api/config.js` 会自动作为服务端接口部署。
 
+## 部署到 Cloudflare Pages（无需银行卡）
+
+1. 把目录推到 GitHub 仓库。
+2. 在 [dash.cloudflare.com](https://dash.cloudflare.com) 进入 Pages，创建项目并连接 GitHub 仓库。
+3. Framework preset 选择 None，Build command 留空，Build output directory 填 `public`。
+4. 添加 `OPENAI_API_KEY` 环境变量后部署。
+5. `functions/api/chat.js` 和 `functions/api/config.js` 会自动作为服务端接口部署。
+
 ## 部署到自己的服务器
 
 ```bash
